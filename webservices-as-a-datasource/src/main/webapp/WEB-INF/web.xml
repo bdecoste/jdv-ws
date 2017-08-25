@@ -25,6 +25,9 @@
             <role-name>TestRole</role-name>
         </auth-constraint>
     </security-constraint>
+    <login-config>
+      <auth-method>BASIC</auth-method>
+    </login-config>
     <security-role>
       <role-name>TestRole</role-name>
     </security-role>
