@@ -18,17 +18,13 @@
   </listener>
   <security-constraint>
         <web-resource-collection>
-             <web-resource-name>WRCollection</web-resource-name>
-            <url-pattern>//CustomerRESTWebSvc/*</url-pattern>
+             <web-resource-name>All</web-resource-name>
+            <url-pattern>/*</url-pattern>
         </web-resource-collection>
         <auth-constraint>
             <role-name>TestRole</role-name>
         </auth-constraint>
     </security-constraint>
-    <login-config>
-        <auth-constraint>BASIC</auth-constraint>
-        <realm-name>ApplicationRealm</realm-name>
-    </login-config>
     <security-role>
       <role-name>TestRole</role-name>
     </security-role>
